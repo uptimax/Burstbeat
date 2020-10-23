@@ -7,8 +7,8 @@ var asset = [
 'https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js'
 ];
 
-var staticCaches = 'static-v1';
-var staticCaches = 'dynamic-v1';
+var staticCaches = 'static-v2';
+var staticCaches = 'dynamic-v2';
 var fluidSize = 10;
 
 function cacheClearer(cacheref, size){
