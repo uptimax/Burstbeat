@@ -1,0 +1,81 @@
+body {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  overflow: h;
+}
+
+.searchcomponent {
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+  z-index: 1000;
+  ;
+  position: absolute;
+  display: block;
+  opacity: .1;
+  transition: all 300ms ease-in-out;
+  background: whitesmoke;
+  transform: translateY(100%) scaleY(0);
+  will-change: opacity, transform;
+  -webkit-will-change: opacity, transform;
+  top: 0%;
+}
+
+.searchcomponent-active {
+  opacity: 1;
+  transform: translateY(0%) scaleY(1);
+}
+
+.none {
+  display: block;
+}
+
+.preloader-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#library .gerne .box {
+  margin: 10px 0;
+}
+
+#library .gerne .box div {
+  width: 100%;
+  height: 8rem;
+}
+
+library .gerne .box div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#library .gerne .box p {
+  margin: .2rem;
+}
+
+.close{
+  background: red;
+  transition: all 1000ms;
+  opacity: 0 ;
+}
+
+.normalView{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.normalView .view{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow: scroll;
+}
