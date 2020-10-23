@@ -412,8 +412,8 @@
   <div class="views"></div>
   <script>
     if('serviceWorker' in navigator){
-      navigator.serviceWorker.register('sw.js');
-      console.log("service worker registered");
+      navigator.serviceWorker.register('sw.js').then(res=> console.log("service worker registered")).catch(console.log)
+      
     }
   </script>
   <script src="presence.js"></script>
