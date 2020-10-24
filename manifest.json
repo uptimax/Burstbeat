@@ -12,10 +12,9 @@
     {"src":"374x384.png","type":"image/png","sizes":"384x384"},
     {"src":"512x512.png","type":"image/png","sizes":"512x512"}
     ],
-    "start_url":"index.html",
+    "start_url":"/index.html",
     "theme_color":"#DF3E3E",
     "background_color":"whitesmoke",
-    "description":"acclimating you to world of misic",
     "display":"standalone"
     
 }
