@@ -10,7 +10,7 @@ var asset = [
 ];
 
 var staticCaches = 'static-v1';
-var staticCaches = 'dynamic-v1';
+var fluidCaches = 'dynamic-v1';
 var fluidSize = 35;
 
 function cacheClearer(cacheref, size){
@@ -41,7 +41,7 @@ self.addEventListener('activate',async (evt)=>{
 
 self.addEventListener('fetch',evt=>{
   evt.respondWith(
-     caches.match(evt.request.url).then(cachesRes=>{
+     caches.match(evt.request).then(cachesRes=>{
       return cachesRes || fetch(evt.request).then(fetchRes=>{
         return caches.open(fluidCaches).then(cache=>{
           cache.put(evt.request.url, fetchRes.clone());
